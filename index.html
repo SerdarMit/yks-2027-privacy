@@ -4,16 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YKS 2027 Geri Sayım - Gizlilik Politikası</title>
-  <meta name="description" content="YKS 2027 Geri Sayım uygulamasının gizlilik politikası">
+  <meta name="description" content="YKS 2027 Geri Sayım Android uygulamasının gizlilik politikası">
   <style>
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.65; margin: 0; background: #fff; color: #202124; }
     main { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; }
     h1, h2 { line-height: 1.25; }
     h1 { margin-bottom: 6px; }
     .meta { color: #5f6368; margin-bottom: 28px; }
-    .note { padding: 14px 16px; border: 1px solid #dadce0; border-radius: 10px; background: #f8f9fa; }
+    .summary { padding: 14px 16px; border: 1px solid #dadce0; border-radius: 10px; background: #f8f9fa; }
     a { color: #1a73e8; }
-    code { background: #f1f3f4; padding: 2px 5px; border-radius: 4px; }
   </style>
 </head>
 <body>
@@ -23,13 +22,16 @@
 
   <p>
     Bu Gizlilik Politikası, <strong>YKS 2027 Geri Sayım</strong> Android uygulamasının
-    kullanıcı verilerini nasıl işlediğini açıklar.
+    kullanıcı verilerini nasıl işlediğini açıklar. Aşağıdaki reklam ve veri aktarımı
+    açıklamaları, Google Play kapalı testine hazırlanan <strong>2.0.2 sürümü</strong>
+    için geçerlidir.
   </p>
 
-  <div class="note">
-    <strong>Yayınlamadan önce:</strong> Bu sayfadaki
-    <code>Scetsoft</code> ve <code>scetsoft@gmail.com</code>
-    alanlarını Google Play mağaza kaydınızda kullandığınız bilgilerle değiştirin.
+  <div class="summary">
+    <strong>Mevcut sürümün kısa özeti:</strong> YKS 2027 Geri Sayım 2.0.2,
+    reklam göstermez ve uygulamanın içinden kullanıcı verilerini geliştiriciye
+    veya reklam hizmetlerine göndermez. Hedefler, çalışma geçmişi ve ayarlar
+    cihazda saklanır. Kullanıcı hesabı gerekmez.
   </div>
 
   <h2>1. Geliştirici ve iletişim</h2>
@@ -41,117 +43,107 @@
 
   <h2>2. Uygulamada oluşturulan çalışma verileri</h2>
   <p>
-    Uygulamada oluşturduğunuz hedefler, Pomodoro/çalışma oturumları ve geçmişi,
-    sınav tarihi ve uygulama ayarları gibi temel çalışma verileri cihazınızda
-    yerel olarak saklanır. Bu veriler uygulamanın geliştiricisine ait bir sunucuya
-    yüklenmez ve uygulama içinde hesap oluşturma veya bulut senkronizasyonu
-    bulunmaz.
+    Hedefleriniz, Pomodoro ve çalışma oturumlarınız, çalışma geçmişiniz,
+    sınav tarihi tercihleriniz ve uygulama ayarlarınız cihazınızda yerel
+    olarak saklanır. Uygulama bu bilgileri geliştiricinin sunucularına
+    yüklemez. Kullanıcı hesabı veya uygulama içi bulut senkronizasyonu yoktur.
   </p>
 
-  <h2>3. Yaş grubu bilgisi</h2>
+  <h2>3. Yaş grubu tercihi</h2>
   <p>
-    Uygulama, reklam ve gizlilik ayarlarını yaşa uygun şekilde uygulayabilmek için
-    kullanıcıdan bir yaş grubu seçmesini ister. Doğum tarihi, ad, kimlik numarası
-    veya benzeri kimlik bilgileri istenmez.
-  </p>
-  <p>
-    Seçilen yaş grubu cihazda yerel olarak saklanır ve Google Mobile Ads SDK'ya
-    gönderilen reklam isteğinin çocuk, genç veya varsayılan/yetişkin reklam
-    işlemesine uygun şekilde yapılandırılmasında kullanılır. Google'a kullanıcının
-    kesin doğum tarihi gönderilmez.
+    Uygulama yaşa uygun reklam ve gizlilik davranışları için yaş grubu
+    seçmenizi isteyebilir. Yalnızca seçtiğiniz yaş grubu cihazda saklanır;
+    kesin doğum tarihiniz, adınız veya kimlik numaranız bu amaçla istenmez.
+    Mevcut 2.0.2 sürümünde reklam isteği gönderilmediğinden yaş grubu
+    tercihiniz reklam hizmetlerine aktarılmaz.
   </p>
 
-  <h2>4. Reklamlar ve Google Mobile Ads SDK</h2>
+  <h2>4. Reklamlar ve üçüncü taraf SDK'lar</h2>
   <p>
-    Uygulama, belirli ekranlarda reklam göstermek için Google AdMob / Google Mobile
-    Ads SDK kullanır. Google Mobile Ads SDK, reklam sunumu, ölçüm, analiz ve
-    sahtekarlığı önleme amaçlarıyla bazı cihaz ve kullanım verilerini otomatik
-    olarak işleyebilir.
+    Google Play kapalı testi için hazırlanan <strong>2.0.2 sürümünde reklamlar
+    devre dışıdır</strong>. Bu sürümde Google Mobile Ads ve Google User Messaging
+    Platform (UMP) için reklam, rıza veya ölçüm isteği başlatılmaz; Android
+    reklam kimliği (AD_ID) kullanılmaz. Projede gelecekteki reklam
+    sürümlerine yönelik SDK bağımlılıkları bulunabilir, ancak bunların
+    reklam ve rıza işlevleri mevcut dağıtım sürümünde çalıştırılmaz.
   </p>
-  <p>Google'ın resmi açıklamasına göre bu veriler şunları içerebilir:</p>
-  <ul>
-    <li>IP adresi (genel konumun tahmin edilmesi için kullanılabilir),</li>
-    <li>uygulama başlatma, dokunma ve reklam/video etkileşimleri gibi ürün etkileşimleri,</li>
-    <li>uygulama ve SDK performansına ilişkin teşhis bilgileri,</li>
-    <li>Android reklam kimliği, App Set ID ve diğer cihaz/hesap tanımlayıcıları.</li>
-  </ul>
   <p>
-    Google Mobile Ads SDK tarafından iletilen veriler Google tarafından aktarım
-    sırasında şifrelenir. Reklam kimliğinin kullanımı cihaz, yaş, rıza ve Google'ın
-    geçerli gizlilik/reklam kurallarına bağlı olabilir.
+    Gelecekte belirli ekranlarda reklam sunulması planlanmaktadır.
+    Reklam hizmetleri etkinleştirilmeden önce bu politika ve Google Play
+    Veri Güvenliği beyanları güncellenecektir. Reklamların etkin olduğu
+    bir sürümde Google'ın işleyebileceği veri türleri ve rıza tercihleri
+    ayrıca açıklanacaktır.
   </p>
 
-  <h2>5. Rıza ve gizlilik tercihleri</h2>
+  <h2>5. Gizlilik tercihleri ve dış bağlantılar</h2>
   <p>
-    Uygulama, gerekli olduğu durumlarda Google User Messaging Platform (UMP)
-    aracılığıyla kullanıcıdan reklam ve kişisel veri kullanımına ilişkin tercihlerini
-    ister. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki kullanıcılar için
-    geçerli rıza mesajları ve tercih seçenekleri gösterilebilir.
+    Mevcut 2.0.2 sürümünde UMP aracılığıyla reklam rızası toplanmaz; çünkü
+    reklam altyapısı bu dağıtımda devre dışıdır. İleride reklam hizmetleri
+    etkinleştirilirse gerekli rıza ve gizlilik seçenekleri kullanıma
+    sunulacaktır.
   </p>
   <p>
-    Uygulamadaki <strong>Gizlilik seçenekleri</strong> bölümü üzerinden, Google UMP'nin
-    kullanılabilir kıldığı durumlarda gizlilik/reklam tercihlerinizi yeniden
-    görüntüleyebilir veya değiştirebilirsiniz.
+    Uygulamadaki bir dış bağlantıyı açmayı tercih ederseniz bağlantının
+    açıldığı tarayıcının ve ziyaret ettiğiniz sitenin kendi gizlilik
+    kuralları geçerli olabilir.
   </p>
 
   <h2>6. Çocuklar ve genç kullanıcılar</h2>
   <p>
-    Uygulamanın temel hedef kitlesi YKS'ye hazırlanan öğrenciler ve mezunlardır.
-    Reklam istekleri seçilen yaş grubuna göre yaşa uygun şekilde yapılandırılır.
-    Daha küçük kullanıcılar için çocuklara yönelik reklam işlemesi ve uygun reklam
-    içerik sınırlamaları; 16-17 yaş grubu için genç kullanıcı işlemesi uygulanır.
+    Uygulama, özellikle YKS'ye hazırlanan öğrenciler ve mezunlar için
+    tasarlanmıştır. Google Play'de hedeflenen yaş grupları 16–17 ve
+    18 yaş ve üzeridir. Mevcut 2.0.2 sürümünde hiçbir yaş grubuna
+    reklam gösterilmez. Gelecekte reklamlar etkinleştirilirse yaşa
+    uygun reklam sınırlamaları ve geçerli Google Play politikaları
+    uygulanacaktır.
   </p>
 
-  <h2>7. Üçüncü taraflarla veri paylaşımı</h2>
+  <h2>7. Veri toplama ve üçüncü taraflarla paylaşım</h2>
   <p>
-    Uygulamanın geliştiricisi; hedef, Pomodoro ve diğer yerel çalışma verilerinizi
-    kendi sunucusuna toplamaz veya satmaz. Ancak reklam ve rıza yönetimi amacıyla
-    Google Mobile Ads ve UMP hizmetleri kendi SDK'ları kapsamında yukarıda açıklanan
-    cihaz/kullanım verilerini işleyebilir ve paylaşabilir.
-  </p>
-  <p>
-    Google'ın veri işleme uygulamaları hakkında daha fazla bilgi:
-    <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve
-    <a href="https://policies.google.com/technologies/ads">Google Reklam Teknolojileri</a>.
+    Mevcut 2.0.2 sürümünde uygulama, Google Play'in Veri Güvenliği
+    kapsamında açıklama gerektiren kullanıcı verilerini cihazdan
+    geliştiriciye veya üçüncü taraflara toplamaz ya da paylaşmaz.
+    Yerel çalışma kayıtları ve yaş grubu tercihi uygulamanın kendisi
+    tarafından cihaz dışına gönderilmez.
   </p>
 
   <h2>8. Veri güvenliği</h2>
   <p>
-    Uygulamanın temel çalışma verileri cihaz üzerinde tutulur. Reklam SDK'sı
-    tarafından Google'a iletilen veriler için Google'ın kendi güvenlik ve aktarım
-    mekanizmaları geçerlidir. Google Mobile Ads SDK'nın resmi açıklamasına göre
-    SDK tarafından iletilen veriler TLS ile aktarım sırasında şifrelenir.
+    Temel çalışma verileriniz cihazınızda saklanır. Bu verilerin cihaz
+    üzerindeki korunması, cihazınızın ekran kilidi, işletim sistemi
+    güvenliği ve cihaz erişim ayarlarına da bağlıdır. İşletim sistemi
+    veya kullanıcı tarafından etkinleştirilen cihaz yedekleme
+    hizmetlerinin veri işleme uygulamaları ayrıca geçerli olabilir;
+    uygulama kendi bulut eşitleme hizmetini sunmaz.
   </p>
 
-  <h2>9. Veri saklama ve silme</h2>
+  <h2>9. Verilerin saklanması ve silinmesi</h2>
   <p>
-    Uygulamanın yerel çalışma verileri, kullanıcı tarafından uygulama içinden
-    temizlenene, Android ayarlarından uygulama verileri silinene veya uygulama
-    kaldırılana kadar cihazda kalabilir.
-  </p>
-  <p>
-    Google Mobile Ads ve UMP tarafından işlenen verilerin saklama ve silme
-    uygulamaları Google'ın ilgili politikalarına tabidir. Bu üçüncü taraf verilerinin
-    saklama süresi uygulama geliştiricisinin doğrudan kontrolünde değildir.
+    Yerel kayıtlar, uygulamanın sunduğu veri temizleme seçenekleriyle,
+    Android'in uygulama verilerini temizleme işleviyle veya uygulamayı
+    kaldırarak silinebilir. Android yedeklemeleri varsa bunların
+    yönetimi ilgili işletim sistemi veya yedekleme hizmetinin
+    ayarlarına tabidir.
   </p>
 
-  <h2>10. Hesaplar</h2>
+  <h2>10. Kullanıcı hesapları</h2>
   <p>
-    Uygulamada kullanıcı hesabı oluşturma özelliği bulunmaz. Bu nedenle uygulama
-    geliştiricisi tarafından tutulan bir kullanıcı hesabının silinmesi süreci yoktur.
+    Uygulama kullanıcı hesabı oluşturulmasını gerektirmez ve
+    geliştirici sunucusunda kullanıcı hesabı tutmaz. Bu nedenle
+    geliştirici hesabı silme talebi gerektiren bir hesap sistemi bulunmaz.
   </p>
 
-  <h2>11. Değişiklikler</h2>
+  <h2>11. Politika değişiklikleri</h2>
   <p>
-    Bu politika; uygulamanın özellikleri, kullanılan SDK'lar veya yasal/politika
-    gereklilikleri değiştiğinde güncellenebilir. Güncel sürüm bu sayfada yayımlanır
-    ve son güncelleme tarihi sayfanın üst kısmında belirtilir.
+    Uygulamanın veri işleme davranışı, kullandığı SDK'lar veya
+    ilgili kurallar değişirse bu gizlilik politikası güncellenebilir.
+    Güncel metin bu sayfada yayımlanır ve değişiklik tarihi belirtilir.
   </p>
 
   <h2>12. İletişim</h2>
   <p>
-    Bu Gizlilik Politikası veya uygulamadaki veri kullanımı hakkında sorularınız
-    için <a href="mailto:scetsoft@gmail.com">scetsoft@gmail.com</a>
+    Gizlilik veya verilerin işlenmesi hakkındaki sorularınız için
+    <a href="mailto:scetsoft@gmail.com">scetsoft@gmail.com</a>
     adresinden <strong>Scetsoft</strong> ile iletişime geçebilirsiniz.
   </p>
 </main>
