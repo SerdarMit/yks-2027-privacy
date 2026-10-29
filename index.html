@@ -18,23 +18,25 @@
 <body>
 <main>
   <h1>YKS 2027 Geri Sayım - Gizlilik Politikası</h1>
-  <p class="meta">Son güncelleme: 29 Ekim 2026</p>
+  <p class="meta">Son güncelleme: 29 Ekim 2026 (reklamlı sürüm hazırlığı)</p>
 
   <p>
     Bu Gizlilik Politikası, <strong>YKS 2027 Geri Sayım</strong> Android uygulamasında
     kişisel verilerin ve uygulama bilgilerinin nasıl işlendiğini açıklar.
     Google Play kapalı testindeki <strong>2.0.2</strong> sürümü ile
-    <strong>2.0.3 olarak planlanan reklamsız üretim sürümü</strong> arasındaki
+    <strong>2.0.3 olarak planlanan reklam destekli üretim sürümü</strong> arasındaki
     güncelleme kontrolü farkları aşağıda ayrıca belirtilmiştir.
   </p>
 
   <div class="summary">
-    <strong>Kısa özet:</strong> Uygulama reklam göstermez; kullanıcı hesabı gerektirmez.
+    <strong>Kısa özet:</strong> Google Play kapalı test sürümü 2.0.2 reklamsızdır.
+    İlk üretim için hazırlanan 2.0.3 sürümünde Ana Sayfa ve İstatistikler ekranlarında
+    Google AdMob banner reklamları etkinleştirilecektir; AdMob'un reklam sunması
+    hesap ve uygulama onayına bağlıdır. Kullanıcı hesabı gerekmez.
     Hedefler, Pomodoro kayıtları, çalışma geçmişi, sınav tarihi tercihleri ve ayarlar
-    cihazda tutulur. 2.0.2 sürümünde otomatik ağ üzerinden sürüm kontrolü yoktur.
-    Planlanan 2.0.3 sürümünden itibaren uygulama, güvenli bağlantıyla
-    güncelleme politikasını kontrol edebilir ve Google Play'in güncelleme özelliğini kullanabilir.
-    Çalışma kayıtları bu kontrollerin parçası olarak gönderilmez.
+    cihazda tutulur. 2.0.3 sürümünde ayrıca HTTPS üzerinden güncelleme politikası
+    kontrolü ve Google Play uygulama içi güncelleme özelliği bulunur.
+    Çalışma kayıtları bu hizmetlere yüklenmez.
   </div>
 
   <h2>1. Geliştirici ve iletişim</h2>
@@ -55,25 +57,34 @@
 
   <h2>3. Yaş grubu tercihi</h2>
   <p>
-    Uygulama, yaşa uygun özellik ve gizlilik davranışları için yaş grubu
-    seçmenizi isteyebilir. Bu tercih cihazda saklanır; bu amaçla tam doğum tarihi,
-    ad veya kimlik numarası talep edilmez. Reklamlar kapalı olan sürümlerde
-    yaş grubu tercihi reklam hizmetlerine gönderilmez.
+    Uygulama, reklam ve gizlilik korumalarının yaşa uygun çalışabilmesi için
+    yaş grubu seçmenizi isteyebilir. Tercih cihazda saklanır; tam doğum tarihi,
+    ad veya kimlik numarası istenmez. Reklamlı sürümde yaş grubuna göre
+    reklam isteği için uygun koruma ayarları uygulanır; bu tercih,
+    doğum tarihinizin reklam sağlayıcısına gönderilmesi anlamına gelmez.
   </p>
 
   <h2>4. Reklamlar ve reklam SDK'ları</h2>
   <p>
-    Kapalı test <strong>2.0.2</strong> ve planlanan ilk üretim <strong>2.0.3</strong>
-    sürümleri <strong>reklamsızdır</strong>. Bu sürümlerde Google Mobile Ads ve
-    Google User Messaging Platform (UMP) üzerinden reklam veya reklam rızası
-    isteği başlatılmaz; Android reklam kimliği (AD_ID) kullanılmaz.
-    Projede ilerideki bir reklam sürümü için SDK bağımlılıkları bulunabilir;
-    bu, burada açıklanan reklamsız sürümlerde reklamların etkin olduğu anlamına gelmez.
+    Kapalı test <strong>2.0.2</strong> sürümü reklamsızdır ve reklam/UMP istekleri
+    devre dışıdır. <strong>2.0.3 olarak hazırlanan ilk üretim sürümünde</strong>
+    Google AdMob aracılığıyla Ana Sayfa ve İstatistikler ekranlarında banner
+    reklamlar etkinleştirilecektir. Pomodoro oturumu sırasında reklam
+    gösterilmesi planlanmamaktadır. Reklamların fiilen gösterilebilmesi,
+    Google'ın hesap ve uygulama uygunluk incelemelerine ve reklam bulunabilirliğine bağlıdır.
   </p>
   <p>
-    Gelecekte reklamlar etkinleştirilirse, ilgili sürüm yayımlanmadan önce
-    bu politika ve Google Play Veri Güvenliği beyanları reklam teknolojilerinin
-    gerçek veri işleme davranışına göre yeniden güncellenecektir.
+    Google Mobile Ads SDK reklam sunumu, ölçüm, analiz ve kötüye kullanımın
+    önlenmesi amacıyla otomatik olarak <strong>IP adresi</strong> (yaklaşık konum
+    tahminine imkân verebilir), <strong>uygulama ve reklam etkileşimleri</strong>,
+    <strong>tanılama/performans bilgileri</strong> ve <strong>cihaz veya uygulama
+    tanımlayıcıları</strong> (Android reklam kimliği mevcutsa dâhil)
+    gibi verileri işleyebilir ve Google ile paylaşabilir. Bu veriler
+    uygulamanın kendi çalışma kayıtlarından ayrıdır. İşlemenin kapsamı
+    kullanılan SDK, cihaz ayarları, yaş korumaları ve geçerli rıza
+    tercihleriyle değişebilir.
+    Ayrıntılar için <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google'ın Android veri açıklamasına</a>
+    ve <a href="https://policies.google.com/privacy">Google Gizlilik Politikası'na</a> bakabilirsiniz.
   </p>
 
   <h2>5. Uygulama güncellemelerinin kontrolü</h2>
@@ -114,37 +125,54 @@
 
   <h2>7. Veri aktarımı ve üçüncü taraflar</h2>
   <p>
-    Cihazınızdaki çalışma kayıtları geliştirici veya reklam servisleriyle
-    paylaşılmaz. Ancak güncelleme politikası sorgularında bağlantı metaverileri
-    GitHub Pages'e, uygulama içi güncelleme işlevinde gerekli sürüm ve cihaz
-    metaverileri Google Play'e iletilebilir. Bu hizmetlerin veri işleme ve
-    saklama uygulamaları kendi gizlilik koşullarına da tabidir.
+    Hedefleriniz, Pomodoro kayıtlarınız, çalışma geçmişiniz ve kişisel sınav tarihi
+    tercihleriniz geliştiricinin sunucularına yüklenmez ve reklam isteğinin özel
+    verisi olarak gönderilmez.
+  </p>
+  <p>
+    Reklamlı 2.0.3 sürümünde Google AdMob ve kullanıcı gizlilik tercihleri için
+    Google User Messaging Platform (UMP) kullanılabilir. Google reklam sunumu
+    ve rıza yönetimi için ilgili verileri işleyebilir.
+    Ayrıca güncelleme politikası isteği sırasında bağlantı metaverileri
+    GitHub Pages'e, Play uygulama içi güncelleme kontrolünde gerekli
+    uygulama/cihaz metaverileri Google Play'e iletilebilir.
+    Bu hizmetlerin veri işleme ve saklama koşulları kendi politikalarına tabidir.
   </p>
 
   <h2>8. Gizlilik tercihleri ve dış bağlantılar</h2>
   <p>
-    Reklamsız sürümlerde UMP üzerinden reklam rızası alınmaz; reklam isteği de
-    yapılmaz. Gelecekte reklamlar etkinleştirilirse geçerli rıza ve gizlilik
-    seçenekleri ayrı olarak sunulacaktır.
-    Uygulamadaki bir bağlantıyı tarayıcıda açarsanız, tarayıcınızın ve
+    Reklamsız 2.0.2 sürümünde Google UMP üzerinden reklam rızası alınmaz.
+    Reklam destekli 2.0.3 sürümünde Google UMP, geçerli yasal koşullar altında
+    gerektiğinde rıza mesajları sunmak ve gizlilik seçimlerini yönetmek için
+    kullanılır. Gerekli olduğu durumlarda reklam istekleri rıza ve
+    yaş koruma kontrollerine göre gerçekleştirilir. İlgili kullanıcılar
+    uygulama içindeki gizlilik seçenekleri üzerinden tercihlerini
+    yeniden inceleyebilir. Reklam kişiselleştirme seçenekleri ayrıca
+    Android ve Google hesap ayarlarına bağlı olabilir.
+  </p>
+  <p>
+    Uygulamadaki dış bağlantıları tarayıcıda açarsanız, tarayıcının ve
     ziyaret edilen sitenin gizlilik kuralları geçerli olabilir.
   </p>
 
   <h2>9. Çocuklar ve genç kullanıcılar</h2>
   <p>
-    Uygulama, özellikle YKS'ye hazırlanan öğrenciler ve mezunlar için
-    geliştirilmiştir. Google Play'de hedeflenen yaş grupları 16–17 ve
-    18 yaş ve üzeridir. Burada açıklanan 2.0.2 ve planlanan 2.0.3
-    sürümlerinde hiçbir yaş grubuna reklam gösterilmez.
+    Uygulama özellikle YKS'ye hazırlanan öğrenciler ve mezunlar için geliştirilmiştir.
+    Google Play'de hedeflenen yaş grupları 16–17 ve 18 yaş ve üzeridir.
+    Reklam destekli sürümde yaş grubu belirsizse veya kullanıcı genç olarak
+    sınıflandırılıyorsa ilgili reklam ve rıza korumaları uygulanmalıdır;
+    gerekli koşullar sağlanmadan reklam isteği yapılmaması hedeflenmektedir.
+    Bu sürümün gerçek reklam davranışı yayımdan önce ayrıca doğrulanacaktır.
   </p>
 
   <h2>10. Veri güvenliği ve yedekleme</h2>
   <p>
-    Uygulamanın kendisinin yaptığı uzak güncelleme sorguları HTTPS ile
-    gerçekleştirilir. Cihazda saklanan verilerin güvenliği ayrıca cihaz
-    kilidine ve Android güvenlik ayarlarına bağlıdır.
-    Android veya kullanıcı tarafından etkinleştirilen sistem yedeklemeleri
-    geçerli olabilir; uygulamanın kendine ait bulut eşitleme hizmeti yoktur.
+    Güncelleme sorguları HTTPS üzerinden yapılır. Google Mobile Ads SDK'nın
+    otomatik topladığı veriler Google'ın açıklamasına göre aktarımda şifrelenir.
+    Cihazda saklanan verilerin korunması ayrıca cihaz kilidine ve Android
+    güvenlik ayarlarına bağlıdır. Android veya kullanıcı tarafından etkinleştirilen
+    sistem yedeklemeleri geçerli olabilir; uygulamanın kendine ait bulut
+    eşitleme hizmeti bulunmaz.
   </p>
 
   <h2>11. Verilerin saklanması ve silinmesi</h2>
